@@ -1,0 +1,124 @@
+:root {
+  --primary: #1d3557;
+  --secondary: #457b9d;
+  --bg: #f5f7fb;
+  --text-muted: #6c757d;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(120deg, var(--primary), var(--secondary));
+}
+
+.subtitle {
+  font-size: 1.1rem;
+}
+
+/* AVATAR */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #f1faee;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 32px;
+  display: grid;
+  place-items: center;
+  margin: auto;
+}
+
+/* CARD */
+.card {
+  border: none;
+  border-radius: 16px;
+}
+
+.card-body {
+  padding: 1.75rem;
+}
+
+/* SEÇÕES */
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* TIMELINE */
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background: var(--secondary);
+  border-radius: 50%;
+}
+
+.timeline h3 {
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.timeline p,
+.timeline small {
+  color: var(--text-muted);
+}
+
+/* SKILLS */
+.skill-group {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.skill {
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.skill.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.skill.secondary {
+  background: #dee2e6;
+  color: #212529;
+}
+
+/* PROJETOS */
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.project p {
+  margin-bottom: 4px;
+  color: var(--text-muted);
+}
